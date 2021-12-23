@@ -1,0 +1,44 @@
+{
+  "name": "sandbox-vue3",
+  "version": "1.0.0",
+  "description": "A sandbox dev app in vue 3",
+  "main": "index.js",
+  "scripts": {
+    "build:prod": "webpack --env production -c ./build/webpack.config.ts",
+    "build:dev": "webpack --env development -c ./build/webpack.config.ts",
+    "build": "npm run build:prod && npm run build:dev",
+    "serve": "webpack serve --env development -c ./build/webpack.config.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aurelien Brugalieres <pro.aurelien.brugalieres@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bulma": "^0.9.3",
+    "vue": "^3.2.26",
+    "vue-router": "^4.0.12",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/mini-css-extract-plugin": "^2.4.0",
+    "@types/node": "^17.0.4",
+    "@types/webpack": "^5.28.0",
+    "@types/webpack-dev-server": "^4.5.0",
+    "@vue/compiler-sfc": "^3.2.26",
+    "css-loader": "^6.5.1",
+    "handlebars": "^4.7.7",
+    "handlebars-loader": "^1.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.4.5",
+    "sass": "^1.45.1",
+    "sass-loader": "^12.4.0",
+    "ts-loader": "^9.2.6",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4",
+    "vue-loader": "^17.0.0",
+    "vue-style-loader": "^4.1.3",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.1",
+    "webpack-merge": "^5.8.0"
+  }
+}
